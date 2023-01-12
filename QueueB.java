@@ -1,4 +1,5 @@
 import java.util.Queue;
+// implement using Arr
 
 public class QueueB{
     static class Queue{
@@ -16,7 +17,7 @@ public class QueueB{
             return rear == -1;
         }
 
-        // add
+        // add O(1)
         public static void add(int data){
             if(rear == size-1){
                 System.out.println("queue is full");
@@ -27,7 +28,7 @@ public class QueueB{
             arr[rear] = data;
         }
 
-        // remove
+        // remove O(n)
         public static int remove(){
             if(isEmpty()) {
                 System.out.println("empty queue");
