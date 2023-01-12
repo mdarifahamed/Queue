@@ -23,7 +23,7 @@ public class QueueStack {
             }
         }
 
-        // remove O(n)
+        // remove O(1)
         public static int remove(){
             if(isEmpty()){
                 System.out.println("queue empty");
@@ -32,7 +32,7 @@ public class QueueStack {
             return s1.pop();
         }
 
-        // peek O(n)
+        // peek O(1)
         public static int peek(){
             if (isEmpty()) {
                 System.out.println("queue empty");
